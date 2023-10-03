@@ -1,6 +1,5 @@
 {
-	"editor.formatOnSave": false,
-	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
 	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": false,
