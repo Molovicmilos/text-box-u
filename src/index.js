@@ -3,6 +3,7 @@ import './style.scss';
 import Edit from './edit';
 import save from './save';
 import metadata from './block.json';
+import icon from './assets/text-box-svgrepo-com.svg';
 
 registerBlockType(metadata.name, {
 	/**
@@ -14,4 +15,5 @@ registerBlockType(metadata.name, {
 	 * @see ./save.js
 	 */
 	save,
+	icon: <img src={icon} alt="" />,
 });
