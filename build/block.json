@@ -12,17 +12,87 @@
     "paragraph",
     "box"
   ],
-  "example": {},
+  "example": {
+    "attributes": {
+      "text": "This is some text",
+      "gradient": "red-to-blue",
+      "shadow": true
+    }
+  },
   "supports": {
-    "html": false
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "__experimentalDefaultControls": {
+        "padding": true,
+        "margin": true
+      }
+    }
   },
   "attributes": {
     "text": {
       "type": "string",
       "source": "html",
-      "selector": "h4"
+      "selector": "p"
+    },
+    "textAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000"
+    },
+    "gradients": {
+      "type": "string",
+      "default": "red-to-purple"
+    },
+    "shadow": {
+      "type": "boolean",
+      "default": false
+    },
+    "shadowOpacity": {
+      "type": "number",
+      "default": 30
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#f03"
+        },
+        "spacing": {
+          "padding": {
+            "top": "50px",
+            "bottom": "50px",
+            "left": "50px",
+            "right": "50px"
+          }
+        }
+      }
     }
   },
+  "styles": [
+    {
+      "name": "squared",
+      "label": "Squared",
+      "isDefault": true
+    },
+    {
+      "name": "rounded",
+      "label": "Rounded"
+    }
+  ],
   "textdomain": "text-box",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
